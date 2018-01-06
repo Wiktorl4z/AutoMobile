@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity
     public static final int RC_SIGN_IN = 1;
 
     private String mUsername;
+    Button mbutton;
 
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -63,6 +65,15 @@ public class MainActivity extends AppCompatActivity
                 }
             }
         };
+
+        mbutton = findViewById(R.id.button_main);
+        mbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 

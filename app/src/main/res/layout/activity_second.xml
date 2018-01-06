@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/carImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/auto1" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:background="@color/cardview_light_background"
+        android:elegantTextHeight="true"
+        android:gravity="center"
+        android:textColor="@color/priceColor"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/carImageView"
+        app:layout_constraintEnd_toEndOf="@+id/carImageView"
+        android:text="499 999 PLN" />
+
+    <TextView
+        android:id="@+id/carNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="Ford Mustang"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carImageView" />
+
+    <TextView
+        android:id="@+id/engineTextView"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="155 534"
+        app:layout_constraintTop_toBottomOf="@+id/przebiegTextView"
+        tools:layout_editor_absoluteX="178dp" />
+
+    <TextView
+        android:id="@+id/rokprodukcjiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Rok produkcji"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carNameTextView" />
+
+    <TextView
+        android:id="@+id/przebiegTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Przebieg"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/silnikTextViewe"
+        app:layout_constraintStart_toEndOf="@+id/rokprodukcjiTextView"
+        app:layout_constraintTop_toBottomOf="@+id/carNameTextView" />
+
+    <TextView
+        android:id="@+id/silnikTextViewe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Silnik"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carNameTextView" />
+
+    <TextView
+        android:id="@+id/benzynaTextView"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Benzyna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/engineTextView"
+        app:layout_constraintTop_toBottomOf="@+id/silnikTextViewe" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1974"
+        app:layout_constraintEnd_toStartOf="@+id/engineTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rokprodukcjiTextView" />
+</android.support.constraint.ConstraintLayout>

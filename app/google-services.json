@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "976090054588",
+    "firebase_url": "https://automobile-33ab9.firebaseio.com",
+    "project_id": "automobile-33ab9",
+    "storage_bucket": "automobile-33ab9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976090054588:android:d5056f3ab1ccc1cb",
+        "android_client_info": {
+          "package_name": "com.auto.l4z.automobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976090054588-ibvkpnsrn9lk6hn71kckriotidv9j0po.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.auto.l4z.automobile",
+            "certificate_hash": "d4ecf0ef75bc9002090244e868621d2f86ffdcfc"
+          }
+        },
+        {
+          "client_id": "976090054588-b13o2a1svq5ltkh9urukk1onepruf9ou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLlHOa_54Cn5FEFFsMoGSfcQXRdTbCoiI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976090054588-b13o2a1svq5ltkh9urukk1onepruf9ou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

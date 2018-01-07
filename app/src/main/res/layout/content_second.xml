@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".SecondActivity"
+    tools:context=".done.SecondActivity"
     tools:showIn="@layout/activity_second">
 
 
-    <ImageView
-        android:id="@+id/carImageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/auto1" />
+    <!--    <ImageView
+            android:id="@+id/carImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/auto1" />-->
 
     <TextView
         android:id="@+id/text_view_photo_car"
@@ -178,25 +178,23 @@
 
     <TextView
         android:id="@+id/text_view_message_action"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="70dp"
-        android:gravity="center_vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-
+        android:gravity="center_vertical|center_horizontal"
         android:text="E-mail"
         android:textColor="@color/priceColor"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="0dp"
+        android:layout_width="240dp"
         android:layout_height="70dp"
         android:background="@color/priceColor"
-        android:gravity="center"
+        android:gravity="center_vertical|center_horizontal"
         android:text="Telefon/SMS"
         android:textColor="@color/white"
         android:textSize="30dp"

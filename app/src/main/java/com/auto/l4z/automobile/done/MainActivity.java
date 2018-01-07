@@ -1,4 +1,4 @@
-package com.auto.l4z.automobile;
+package com.auto.l4z.automobile.done;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +17,8 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.auto.l4z.automobile.CollapsingActivity;
+import com.auto.l4z.automobile.R;
 import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity
         mbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, CollapsingActivity.class);
                 startActivity(intent);
             }
         });

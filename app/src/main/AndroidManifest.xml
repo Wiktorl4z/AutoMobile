@@ -9,9 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name=".test.TestMainActivity"
+            android:name=".test.TestActivity"
             android:label="@string/title_activity_test_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -23,9 +22,7 @@
         <activity
             android:name=".done.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".done.SecondActivity"
             android:label="@string/title_activity_second"
@@ -34,7 +31,10 @@
             android:name=".CollapsingActivity"
             android:label="Colapsing"
             android:theme="@style/AppTheme.NoActionBar" />
-
+        <activity
+            android:name=".test.TestMainActivity"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

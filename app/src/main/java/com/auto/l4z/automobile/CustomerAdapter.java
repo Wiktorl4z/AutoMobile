@@ -1,4 +1,3 @@
-/*
 
 package com.auto.l4z.automobile;
 
@@ -26,20 +25,20 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.MyView
         TextView textViewCarName;
         TextView textViewCarPrice;
         TextView textViewCarEngine;
-        TextView textViewCarPassenger;
+        TextView textViewFuelType;
+        TextView textViewProductionDate;
 
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            this.textViewCarId = (TextView) itemView.findViewById(R.id.text_view_car_id);
-            this.textViewCarName = (TextView) itemView.findViewById(R.id.text_view_car_name);
-            this.textViewCarPrice = (TextView) itemView.findViewById(R.id.text_view_car_price);
-            this.textViewCarEngine = (TextView) itemView.findViewById(R.id.text_view_car_engine);
-            this.textViewCarPassenger = (TextView) itemView.findViewById(R.id.text_view_car_passenger);
+            this.textViewCarName = (TextView) itemView.findViewById(R.id.carNameTextView);
+            this.textViewCarPrice = (TextView) itemView.findViewById(R.id.text_view_price);
+            this.textViewCarEngine = (TextView) itemView.findViewById(R.id.text_view_engine_mileage_from_server);
+            this.textViewFuelType = (TextView) itemView.findViewById(R.id.text_view_engine_type_from_server);
+            this.textViewProductionDate = (TextView) itemView.findViewById(R.id.text_view_production_date_from_server);
         }
 
     }
-
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent,
@@ -52,18 +51,21 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.MyView
     }
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, int position) {
-        TextView textViewCarId = holder.textViewCarId;
+    public void onBindViewHolder(final MyViewHolder holder, int listPosition) {
+
+
         TextView textViewCarName = holder.textViewCarName;
         TextView textViewCarPrice = holder.textViewCarPrice;
         TextView textViewCarEngine = holder.textViewCarEngine;
-        TextView textViewCarPassenger = holder.textViewCarPassenger;
+        TextView textViewFuelType = holder.textViewFuelType;
+        TextView textViewProductionDate = holder.textViewProductionDate;
 
-        textViewCarId.setText("Numer: " + dataSet.get(listPosition).getId());
-        textViewCarName.setText("Nazwa: " + dataSet.get(listPosition).getName());
-        textViewCarPrice.setText("Cena: " + dataSet.get(listPosition).getPrice() + "$");
-        textViewCarEngine.setText("Silnik " + dataSet.get(listPosition).getEngine());
-        textViewCarPassenger.setText("Miejsca: " + dataSet.get(listPosition).getPassenger());
+
+        textViewCarName.setText("" + dataSet.get(listPosition).getName());
+        textViewCarPrice.setText("" + dataSet.get(listPosition).getPrice());
+        textViewCarEngine.setText("" + dataSet.get(listPosition).getEngine());
+        textViewFuelType.setText("" + dataSet.get(listPosition).getFuelType());
+        textViewProductionDate.setText("" + dataSet.get(listPosition).getProductionDate());
     }
 
     @Override
@@ -71,4 +73,3 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.MyView
         return dataSet.size();
     }
 }
-*/
